@@ -45,9 +45,14 @@ const findHero = (id, callback) =>{
 
     if ( !hero ) {
         callback(`Hero with id ${ id } not found`);
-        return; // undefined;
+        return; // retornara un undefined;
     }
 
-    callback( null, hero );
+    callback( null, hero ); 
+    
+    /* debemos darle un parametro "null" porque 
+        en la documentación estamos diciendo que pasaremos un Strind ID,
+        y tambien  un Error/Null  y un Heroe. 
+    */
 }
 

@@ -1,10 +1,12 @@
 
 
+
+
 /**
  * 
  * @param {HTMLDivElement} element 
  */
-export const enviromentsComponent = (element) => {
+export const demoComponent = (element) => {
 
     console.log( import.meta.env )
 
