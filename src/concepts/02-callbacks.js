@@ -18,7 +18,7 @@ export const callbacksComponent = (element) => {
         // element.innerHTML= hero?.name || 'No hay heroe';
 
 
-        findHero( id2, (error, hero2)=>{
+        findHero( id2, (error, hero2) => {
             if( error ){
                 element.innerHTML = error;
                 return
@@ -44,7 +44,8 @@ const findHero = (id, callback) =>{
     const hero = heroes.find ( hero => hero.id === id);
 
     if ( !hero ) {
-        callback(`Hero with id ${ id } not found`);
+        const msgHeroeNotFound = `Hero with id ${ id } not found`;
+        callback(msgHeroeNotFound);
         return; // retornara un undefined;
     }
 
