@@ -66,11 +66,6 @@ export const promiseComponent = (element) => {
     //         renderTwoHeroes( hero1, hero2);
     //     })
     //     .catch( renderError ); 
-
-
-
-
-    
 }
 
 /**
