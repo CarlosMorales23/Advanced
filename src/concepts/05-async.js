@@ -27,7 +27,7 @@ const findHero = async( id )=>{
     if(!hero)
         throw `Hero with id ${ id } not found`
 
-    return hero?.name
+    return hero.name
 }
 
 //la función asyncrona me permite regresar un objeto directamente y no una promesa. 
