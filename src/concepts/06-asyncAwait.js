@@ -1,6 +1,4 @@
-
-import { heroes } from '../data/heroes'
-
+import { heroes } from "../data/heroes";
 
 /**
  * 
