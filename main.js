@@ -12,6 +12,7 @@ import { callBackComponentManejoDeErrores } from './src/concepts2/02-callbacks-m
 import { callBackHellComponent } from './src/concepts2/02-callbacksHell';
 import { asyncManejoErrorComponent } from './src/concepts/05-asyncManejoError';
 import { asyncAwaitErrorComponent } from './src/concepts/06-asyncAwaitError';
+import { asyncAwaitNoSecuencialesComponent } from './src/concepts/06-asyncAwaitNoSecuenciales';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -38,5 +39,5 @@ const element = document.querySelector('.card');
 // callBackComponentManejoDeErrores(element)
 // asyncManejoErrorComponent(element)
 // asyncAwaitComponent(element)
-asyncAwaitErrorComponent(element)
-
+// asyncAwaitErrorComponent(element)
+asyncAwaitNoSecuencialesComponent(element)
