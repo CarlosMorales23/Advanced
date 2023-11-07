@@ -10,6 +10,7 @@ import { asyncAwaitComponent } from './src/concepts/06-asyncAwait';
 import { callBackComponent } from './src/concepts2/02-callbacks';
 import { callBackComponentManejoDeErrores } from './src/concepts2/02-callbacks-manejo-de-errores';
 import { callBackHellComponent } from './src/concepts2/02-callbacksHell';
+import { asyncManejoErrorComponent } from './src/concepts/05-asyncManejoError';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -32,7 +33,7 @@ const element = document.querySelector('.card');
 // promiseComponent(element)
 // promiseRaceComponent(element)
 // asyncComponent(element)
-// asyncAwaitComponent(element)
 // callBackComponent(element)
 // callBackComponentManejoDeErrores(element)
-callBackHellComponent(element)
+// asyncManejoErrorComponent(element)
+asyncAwaitComponent(element)

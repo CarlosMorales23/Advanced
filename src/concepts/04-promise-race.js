@@ -1,7 +1,5 @@
 
 
-
-
 /**
  * 
  * @param {HTMLDivElement} element 

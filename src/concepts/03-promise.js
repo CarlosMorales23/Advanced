@@ -14,7 +14,6 @@ export const promiseComponent = (element) => {
         element.innerHTML = `
             <h3>${ hero1.name }</h3>
             <h3>${ hero2.name }</h3>
-
         `
     };
 
@@ -30,7 +29,7 @@ export const promiseComponent = (element) => {
 
     Promise.all([
         findHero( id1 ),
-        findHero( id2 )
+        findHero( id2 ),
     ])
     .then( ([ hero1, hero2 ]) => renderTwoHeroes ( hero1, hero2))
     .catch( renderError );

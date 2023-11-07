@@ -1,24 +1,23 @@
-import { heroes } from "../data/heroes";
+import { heroes } from "../data/heroes"
+
+
+
 
 /**
  * 
  * @param {HTMLDivElement} element 
  */
-export const asyncAwaitComponent = async (element) => {
+export const asyncAwaitComponent = (element) => {
 
-    const id1 = "5d86371f25a058e5b1c8a65e";
-    const id2 = "5d86371f2343e37870b91ef1";
+    
 
-    const hero1 = await findHero( id1 )
-    const hero2 = await findHero( id2 )
-
-    element.innerHTML = `${ hero1.name} / ${ hero2.name }`; 
 }
 
-const findHero = async(id) => {
-    const hero = heroes.find( hero => hero.id === id);
-    if(!hero)
-        throw `Hero not found`
+const findHero = async(id)=>{
+    const hero = heroes.find( hero => hero.id === id )
 
-    return hero; 
+    if( !hero )
+        throw `Hero with id ${id} not found`
+
+    return hero
 }
